@@ -64,6 +64,8 @@ You can scale up/down how many docker containers you want to run by clicking the
 
 ![Alt text](/docker-examples/vertx-docker-example-fabric8/docs/img/resizeControllerTab.png?raw=true "Controllers Tab in Fabric8 Console")
 
+Here is a [demo video[(https://vimeo.com/131651509) showing how to scale up and down container instances on Kubernetes. The actual docker container in the demo is Camel; but the same would be true of a docker container with vertx ;)
+
 ## Integration testing your app
 
 If you want to run integration tests of your app on Kubernetes (with maybe other apps and services on kubernetes too) you can use the [Fabric8 Arquillian plugin](http://fabric8.io/guide/testing.html) which lets you write regular JUnit test cases which spin up a new Kubernetes namespace, provision all the services, replication controllers and pods required and then runs your test case - then tears everything down again.
